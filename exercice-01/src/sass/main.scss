@@ -2,17 +2,110 @@
 @import "variables";
 
 
-body {
-  background-color: $background-color;
+/*
+    Exercice réalisé dans le cadre du recrutement de Hono Agency
+    https://hono.agency/
+ */
 
-  font-family: degular,sans-serif;
+body {
+  background-color: $dark-blue;
+  margin: 0;
+  font-family: degular, sans-serif;
   font-weight: 500;
   font-style: normal;
-}
 
+  .header {
 
-h1 {
-  font-family: degular-display,sans-serif;
-  font-weight: 600;
-  font-style: normal;
+    &__frame {
+      position: absolute;
+      top: 0;
+
+    }
+
+    &__star {
+      position: absolute;
+      top: 3%;
+      right: 2%;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .section {
+    margin : 50vh auto auto;
+    transform: translate(0, -55%);
+    width: 75%;
+    z-index: 1;
+
+    &__star-small {
+      position: relative;
+      top: 100px;
+      left: 13%;
+      z-index: -1;
+    }
+
+    &__star-white {
+      position: relative;
+      text-align: right;
+      bottom: 110px;
+      right: 8%;
+    }
+
+    &__title {
+      color: #B3CFF9;
+      font-size: 50px;
+      padding: 0 150px;
+      text-align: center;
+      line-height: 1.15;
+    }
+  }
+
+  .aside {
+    position: absolute;
+    left: 52%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+
+    &__div-light {
+      position: relative;
+      background-color: $light-orange;
+      width: 460px;
+      height: 90px;
+      transform: rotate(-3deg);
+      transform-origin: top right;
+      z-index: 999999;
+      top: 50px;
+      left: 15px;
+
+      .text {
+        position: absolute;
+        top: 8px;
+        left: 9%;
+        text-align: center;
+        align-content: center;
+        color: white;
+        font-size: 24px;
+      }
+    }
+
+    &__div-dark {
+      position: relative;
+      background-color: $dark-orange;
+      width: 490px;
+      height: 90px;
+      transform: rotate(-0.5deg);
+      z-index: 2;
+    }
+
+    &__ellipse {
+      position: relative;
+      bottom: 65px;
+      left: -70px;
+    }
+  }
 }
